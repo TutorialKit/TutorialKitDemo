@@ -14,10 +14,11 @@ class HomeViewController: UIViewController {
     
     @IBAction func buttonPressed(sender: AnyObject) {
         iWinButton.enabled = true
+        print("Button pressed")
     }
     
     @IBAction func iWinButtonPressed(sender: AnyObject) {
-        print("I win button pressed")
+        print("I Win button pressed")
     }
     
     override func viewDidLoad() {

@@ -10,6 +10,10 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     
+    @IBAction func resetTutorialSelected(sender: AnyObject) {
+        print("Reset Tutorial button pressed")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
