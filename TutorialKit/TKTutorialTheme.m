@@ -12,6 +12,7 @@
 static UIColor *defaultBackgroundColor;
 static UIColor *defaultForegroundColor;
 static UIFont *defaultFont;
+static float defaultMargin;
 
 
 @implementation TKTutorialTheme
@@ -21,11 +22,24 @@ static UIFont *defaultFont;
     defaultBackgroundColor = [UIColor whiteColor];
     defaultForegroundColor = [UIColor blackColor];
     defaultFont = [UIFont systemFontOfSize:15.0];
+    defaultMargin = 10;
+}
+
++ (TKTutorialTheme *)defaultTheme
+{
+    TKTutorialTheme *theme = [[TKTutorialTheme alloc] init];
+    
+    theme.backgroundColor = defaultBackgroundColor;
+    theme.foregroundColor = defaultForegroundColor;
+    theme.font = defaultFont;
+    theme.margin = defaultMargin;
+    
+    return theme;
 }
 
 + (TKTutorialTheme *)themeFromDictionary:(NSDictionary *)themeDict
 {
-    TKTutorialTheme *theme = [[TKTutorialTheme alloc] init];
+    TKTutorialTheme *theme = [TKTutorialTheme defaultTheme];
     id obj;
     
     if ((obj = [themeDict objectForKey:@"backgroundColor"]))
@@ -34,21 +48,10 @@ static UIFont *defaultFont;
         theme.foregroundColor = (UIColor *)obj;
     if ((obj = [themeDict objectForKey:@"font"]))
         theme.font = (UIFont *)obj;
+    if ((obj = [themeDict objectForKey:@"font"]))
+        theme.margin = [(NSNumber *)obj floatValue];
     
     return theme;
-}
-
-
-- (instancetype)init
-{
-    if (self = [super init])
-    {
-        self.backgroundColor = defaultBackgroundColor;
-        self.foregroundColor = defaultForegroundColor;
-        self.font = defaultFont;
-    }
-    
-    return self;
 }
 
 @end

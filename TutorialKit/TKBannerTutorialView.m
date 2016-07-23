@@ -8,11 +8,25 @@
 
 #import "TKBannerTutorialView.h"
 
+#import "TKTutorial.h"
+
+
 @implementation TKBannerTutorialView
 
-+ (TKBannerTutorialView *)tutorialViewForViewController:(UIViewController *)viewController orientation:(TKBannerOrientation)orientation text:(NSString *)text theme:(TKTutorialTheme *)theme
++ (TKBannerTutorialView *)tutorialViewForViewController:(UIViewController *)viewController orientation:(TKBannerOrientation)orientation text:(NSString *)text theme:(TKTutorialTheme *)theme key:(NSString *)key
 {
-    return nil;
+    if (![TKTutorial keyUsed:key])
+        return nil;
+    
+    CGRect r = CGRectMake(0, 0, viewController.view.bounds.size.width, 0);
+    TKBannerTutorialView *tutorialView = [[TKBannerTutorialView alloc] initWithFrame:r];
+    
+    tutorialView.text = text;
+    tutorialView.theme = theme;
+    [tutorialView setUpTextLabel];
+    
+    
+    return tutorialView;
 }
 
 @end

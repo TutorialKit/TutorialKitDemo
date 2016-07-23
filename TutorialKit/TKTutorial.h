@@ -10,6 +10,8 @@
 
 @interface TKTutorial : NSObject
 
-- (void)resetTutorials;
++ (void)resetTutorials;
++ (BOOL)keyUsed:(NSString *)key;
++ (void)setKey:(NSString *)key;
 
 @end

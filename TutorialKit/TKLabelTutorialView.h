@@ -13,6 +13,6 @@
 @property (strong) UILabel *textLabel;
 @property (strong) NSString *text;
 
-- (float)measureText;
+- (void)setUpTextLabel;
 
 @end

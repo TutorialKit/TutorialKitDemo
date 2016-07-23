@@ -13,7 +13,8 @@ typedef enum
 {
     TKTHEME_BACKGROUNDCOLOR = 0,
     TKTHEME_FOREGROUNDCOLOR,
-    TKTHEME_FONT
+    TKTHEME_FONT,
+    TKTHEME_MARGIN
 } TKThemeEnum;
 
 @interface TKTutorialTheme : NSObject
@@ -21,7 +22,9 @@ typedef enum
 @property (strong) UIColor *backgroundColor;
 @property (strong) UIColor *foregroundColor;
 @property (strong) UIFont *font;
+@property (assign) float margin;
 
++ (TKTutorialTheme *)defaultTheme;
 + (TKTutorialTheme *)themeFromDictionary:(NSDictionary *)themeDict;
 
 @end

@@ -10,10 +10,24 @@
 
 @implementation TKLabelTutorialView
 
-
-- (float)measureText
+- (void)setUpTextLabel
 {
-    float width = self.bounds.size.width - 20;
+    float margin = self.theme.margin;
+    CGRect r = self.bounds;
+    CGRect labelRect = CGRectInset(r, margin, margin);
+    labelRect.size.height = [self measureTextForWidth:labelRect.size.width];
+    
+    self.textLabel = [[UILabel alloc] initWithFrame:labelRect];
+    self.textLabel.font = self.theme.font;
+    self.textLabel.textColor = self.theme.foregroundColor;
+    self.textLabel.text = self.text;
+    
+    r.size.height += labelRect.size.height;
+    self.bounds = r;
+}
+
+- (float)measureTextForWidth:(float)width
+{
     CGSize size = CGSizeMake(width, 10000);
     NSDictionary *attributes = @{NSFontAttributeName: self.theme.font};
     
