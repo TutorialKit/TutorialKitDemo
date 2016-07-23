@@ -10,4 +10,6 @@
 #import "TKTutorial.h"
 #import "TKTutorialView.h"
 #import "TKBannerTutorialView.h"
+#import "TKBubbleTutorialView.h"
+#import "TKTouchTutorialView.h"
 #import "TKTutorialTheme.h"

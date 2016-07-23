@@ -6,8 +6,8 @@
 //  Copyright © 2016 Aqueous Software. All rights reserved.
 //
 
-#import "TKTutorialView.h"
+#import "TKLabelTutorialView.h"
 
-@interface TKBubbleTutorialView : TKTutorialView
+@interface TKBubbleTutorialView : TKLabelTutorialView
 
 @end

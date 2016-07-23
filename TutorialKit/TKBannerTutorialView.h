@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-#import "TKTutorialView.h"
+#import "TKLabelTutorialView.h"
 
 
-@interface TKBannerTutorialView : TKTutorialView
+enum
+{
+    kBannerPositionTop,
+    kBannerPositionBottom
+} TKBannerPosition;
+
+
+@interface TKBannerTutorialView : TKLabelTutorialView
+
 
 @end

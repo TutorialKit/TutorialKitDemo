@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "TKTutorialTheme.h"
+
+
 @interface TKTutorialView : UIView
+
+@property (strong) TKTutorialTheme *theme;
 
 @end

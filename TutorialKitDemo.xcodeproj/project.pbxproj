@@ -13,6 +13,7 @@
 		225CBCBC1D4317DA005E06EB /* TKTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CBCBB1D4317DA005E06EB /* TKTutorialView.m */; };
 		225CBCBF1D431875005E06EB /* TKBannerTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CBCBE1D431875005E06EB /* TKBannerTutorialView.m */; };
 		225CBCC21D4319F9005E06EB /* TKTutorialTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CBCC11D4319F9005E06EB /* TKTutorialTheme.m */; };
+		2284318F1D43E26000E7172A /* TKLabelTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2284318E1D43E26000E7172A /* TKLabelTutorialView.m */; };
 		22E267521D427B83000DD04F /* (null) in Sources */ = {isa = PBXBuildFile; };
 		22E267581D427B83000DD04F /* (null) in Sources */ = {isa = PBXBuildFile; };
 		22E2675B1D427B83000DD04F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E267591D427B83000DD04F /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 		225CBCC01D4319F9005E06EB /* TKTutorialTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKTutorialTheme.h; path = TutorialKit/TKTutorialTheme.h; sourceTree = "<group>"; };
 		225CBCC11D4319F9005E06EB /* TKTutorialTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKTutorialTheme.m; path = TutorialKit/TKTutorialTheme.m; sourceTree = "<group>"; };
 		225CBCC31D431A43005E06EB /* TutorialKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialKit.h; path = TutorialKit/TutorialKit.h; sourceTree = "<group>"; };
+		2284318D1D43E26000E7172A /* TKLabelTutorialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKLabelTutorialView.h; path = TutorialKit/TKLabelTutorialView.h; sourceTree = "<group>"; };
+		2284318E1D43E26000E7172A /* TKLabelTutorialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKLabelTutorialView.m; path = TutorialKit/TKLabelTutorialView.m; sourceTree = "<group>"; };
 		22E2674A1D427B83000DD04F /* TutorialKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutorialKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E2675A1D427B83000DD04F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22E2675C1D427B83000DD04F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,16 +73,26 @@
 				225CBCB71D431791005E06EB /* TKTutorial.m */,
 				225CBCBA1D4317DA005E06EB /* TKTutorialView.h */,
 				225CBCBB1D4317DA005E06EB /* TKTutorialView.m */,
-				225CBCBD1D431875005E06EB /* TKBannerTutorialView.h */,
-				225CBCBE1D431875005E06EB /* TKBannerTutorialView.m */,
-				222489721D432BFC00594453 /* TKBubbleTutorialView.h */,
-				222489731D432BFC00594453 /* TKBubbleTutorialView.m */,
+				228431901D43E31E00E7172A /* Label Tutorials */,
 				222489751D432C0A00594453 /* TKTouchTutorialView.h */,
 				222489761D432C0A00594453 /* TKTouchTutorialView.m */,
 				225CBCC01D4319F9005E06EB /* TKTutorialTheme.h */,
 				225CBCC11D4319F9005E06EB /* TKTutorialTheme.m */,
 			);
 			name = TutorialKit;
+			sourceTree = "<group>";
+		};
+		228431901D43E31E00E7172A /* Label Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				2284318D1D43E26000E7172A /* TKLabelTutorialView.h */,
+				2284318E1D43E26000E7172A /* TKLabelTutorialView.m */,
+				225CBCBD1D431875005E06EB /* TKBannerTutorialView.h */,
+				225CBCBE1D431875005E06EB /* TKBannerTutorialView.m */,
+				222489721D432BFC00594453 /* TKBubbleTutorialView.h */,
+				222489731D432BFC00594453 /* TKBubbleTutorialView.m */,
+			);
+			name = "Label Tutorials";
 			sourceTree = "<group>";
 		};
 		22E267411D427B83000DD04F = {
@@ -199,6 +212,7 @@
 				222489771D432C0A00594453 /* TKTouchTutorialView.m in Sources */,
 				225CBCC21D4319F9005E06EB /* TKTutorialTheme.m in Sources */,
 				94FBF7B21D432A4D00D12213 /* SecondViewController.swift in Sources */,
+				2284318F1D43E26000E7172A /* TKLabelTutorialView.m in Sources */,
 				94FBF7B11D432A4D00D12213 /* FirstViewController.swift in Sources */,
 				225CBCB81D431791005E06EB /* TKTutorial.m in Sources */,
 				94FBF7B01D432A4D00D12213 /* AppDelegate.swift in Sources */,

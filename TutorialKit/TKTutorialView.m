@@ -10,6 +10,9 @@
 
 @implementation TKTutorialView
 
-
++ (TKTutorialView *)tutorialView
+{
+    return nil;
+}
 
 @end
