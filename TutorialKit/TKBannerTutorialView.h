@@ -13,8 +13,8 @@
 
 typedef enum
 {
-    kBannerOrientationTop,
-    kBannerOrientationBottom
+    kTKBannerOrientationTop,
+    kTKBannerOrientationBottom
 } TKBannerOrientation;
 
 

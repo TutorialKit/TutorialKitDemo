@@ -22,7 +22,7 @@
     self.textLabel.textColor = self.theme.foregroundColor;
     self.textLabel.text = self.text;
     
-    r.size.height += labelRect.size.height;
+    r.size.height += labelRect.size.height + 2 * margin;
     self.bounds = r;
 }
 

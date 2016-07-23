@@ -25,6 +25,15 @@
     tutorialView.theme = theme;
     [tutorialView setUpTextLabel];
     
+    tutorialView.orientation = orientation;
+    if (tutorialView.orientation == kTKBannerOrientationBottom)
+    {
+        r = tutorialView.bounds;
+        r.origin.y = viewController.view.bounds.size.height - tutorialView.bounds.size.height;
+        tutorialView.bounds = r;
+    }
+    
+    [viewController.view addSubview:tutorialView];
     
     return tutorialView;
 }
