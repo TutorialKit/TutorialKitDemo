@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		222489741D432BFC00594453 /* TKBubbleTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 222489731D432BFC00594453 /* TKBubbleTutorialView.m */; };
-		222489771D432C0A00594453 /* TKTouchTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 222489761D432C0A00594453 /* TKTouchTutorialView.m */; };
 		225CBCB81D431791005E06EB /* TKTutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CBCB71D431791005E06EB /* TKTutorial.m */; };
 		225CBCBC1D4317DA005E06EB /* TKTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CBCBB1D4317DA005E06EB /* TKTutorialView.m */; };
 		225CBCBF1D431875005E06EB /* TKBannerTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CBCBE1D431875005E06EB /* TKBannerTutorialView.m */; };
 		225CBCC21D4319F9005E06EB /* TKTutorialTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CBCC11D4319F9005E06EB /* TKTutorialTheme.m */; };
 		2284318F1D43E26000E7172A /* TKLabelTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2284318E1D43E26000E7172A /* TKLabelTutorialView.m */; };
+		228431951D4425B200E7172A /* TKGestureTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 228431941D4425B200E7172A /* TKGestureTutorialView.m */; };
 		22E267521D427B83000DD04F /* (null) in Sources */ = {isa = PBXBuildFile; };
 		22E267581D427B83000DD04F /* (null) in Sources */ = {isa = PBXBuildFile; };
 		22E2675B1D427B83000DD04F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E267591D427B83000DD04F /* Main.storyboard */; };
@@ -27,8 +27,6 @@
 /* Begin PBXFileReference section */
 		222489721D432BFC00594453 /* TKBubbleTutorialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKBubbleTutorialView.h; path = TutorialKit/TKBubbleTutorialView.h; sourceTree = "<group>"; };
 		222489731D432BFC00594453 /* TKBubbleTutorialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKBubbleTutorialView.m; path = TutorialKit/TKBubbleTutorialView.m; sourceTree = "<group>"; };
-		222489751D432C0A00594453 /* TKTouchTutorialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKTouchTutorialView.h; path = TutorialKit/TKTouchTutorialView.h; sourceTree = "<group>"; };
-		222489761D432C0A00594453 /* TKTouchTutorialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKTouchTutorialView.m; path = TutorialKit/TKTouchTutorialView.m; sourceTree = "<group>"; };
 		225CBCB61D431791005E06EB /* TKTutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKTutorial.h; path = TutorialKit/TKTutorial.h; sourceTree = "<group>"; };
 		225CBCB71D431791005E06EB /* TKTutorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKTutorial.m; path = TutorialKit/TKTutorial.m; sourceTree = "<group>"; };
 		225CBCBA1D4317DA005E06EB /* TKTutorialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKTutorialView.h; path = TutorialKit/TKTutorialView.h; sourceTree = "<group>"; };
@@ -41,6 +39,8 @@
 		2284318D1D43E26000E7172A /* TKLabelTutorialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKLabelTutorialView.h; path = TutorialKit/TKLabelTutorialView.h; sourceTree = "<group>"; };
 		2284318E1D43E26000E7172A /* TKLabelTutorialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKLabelTutorialView.m; path = TutorialKit/TKLabelTutorialView.m; sourceTree = "<group>"; };
 		228431921D43FC0900E7172A /* TutorialKitBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TutorialKitBridgingHeader.h; sourceTree = "<group>"; };
+		228431931D4425B200E7172A /* TKGestureTutorialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKGestureTutorialView.h; path = TutorialKit/TKGestureTutorialView.h; sourceTree = "<group>"; };
+		228431941D4425B200E7172A /* TKGestureTutorialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKGestureTutorialView.m; path = TutorialKit/TKGestureTutorialView.m; sourceTree = "<group>"; };
 		22E2674A1D427B83000DD04F /* TutorialKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutorialKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E2675A1D427B83000DD04F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22E2675C1D427B83000DD04F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,8 +71,8 @@
 				225CBCBA1D4317DA005E06EB /* TKTutorialView.h */,
 				225CBCBB1D4317DA005E06EB /* TKTutorialView.m */,
 				228431901D43E31E00E7172A /* Label Tutorials */,
-				222489751D432C0A00594453 /* TKTouchTutorialView.h */,
-				222489761D432C0A00594453 /* TKTouchTutorialView.m */,
+				228431931D4425B200E7172A /* TKGestureTutorialView.h */,
+				228431941D4425B200E7172A /* TKGestureTutorialView.m */,
 				225CBCC01D4319F9005E06EB /* TKTutorialTheme.h */,
 				225CBCC11D4319F9005E06EB /* TKTutorialTheme.m */,
 			);
@@ -205,7 +205,6 @@
 				22E267581D427B83000DD04F /* (null) in Sources */,
 				222489741D432BFC00594453 /* TKBubbleTutorialView.m in Sources */,
 				22E267521D427B83000DD04F /* (null) in Sources */,
-				222489771D432C0A00594453 /* TKTouchTutorialView.m in Sources */,
 				225CBCC21D4319F9005E06EB /* TKTutorialTheme.m in Sources */,
 				2284318F1D43E26000E7172A /* TKLabelTutorialView.m in Sources */,
 				225CBCB81D431791005E06EB /* TKTutorial.m in Sources */,
@@ -214,6 +213,7 @@
 				94FBF7B61D4336B900D12213 /* SettingsViewController.swift in Sources */,
 				225CBCBC1D4317DA005E06EB /* TKTutorialView.m in Sources */,
 				94FBF7B41D4334D000D12213 /* HomeViewController.swift in Sources */,
+				228431951D4425B200E7172A /* TKGestureTutorialView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
