@@ -10,6 +10,7 @@
 		225CBCB81D431791005E06EB /* TKTutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CBCB71D431791005E06EB /* TKTutorial.m */; };
 		225CBCBC1D4317DA005E06EB /* TKTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CBCBB1D4317DA005E06EB /* TKTutorialView.m */; };
 		225CBCBF1D431875005E06EB /* TKBannerTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CBCBE1D431875005E06EB /* TKBannerTutorialView.m */; };
+		225CBCC21D4319F9005E06EB /* TKTutorialTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CBCC11D4319F9005E06EB /* TKTutorialTheme.m */; };
 		22E2674F1D427B83000DD04F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E2674E1D427B83000DD04F /* main.m */; };
 		22E267521D427B83000DD04F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E267511D427B83000DD04F /* AppDelegate.m */; };
 		22E267551D427B83000DD04F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E267541D427B83000DD04F /* FirstViewController.m */; };
@@ -26,6 +27,9 @@
 		225CBCBB1D4317DA005E06EB /* TKTutorialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKTutorialView.m; path = TutorialKit/TKTutorialView.m; sourceTree = "<group>"; };
 		225CBCBD1D431875005E06EB /* TKBannerTutorialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKBannerTutorialView.h; path = TutorialKit/TKBannerTutorialView.h; sourceTree = "<group>"; };
 		225CBCBE1D431875005E06EB /* TKBannerTutorialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKBannerTutorialView.m; path = TutorialKit/TKBannerTutorialView.m; sourceTree = "<group>"; };
+		225CBCC01D4319F9005E06EB /* TKTutorialTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKTutorialTheme.h; path = TutorialKit/TKTutorialTheme.h; sourceTree = "<group>"; };
+		225CBCC11D4319F9005E06EB /* TKTutorialTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKTutorialTheme.m; path = TutorialKit/TKTutorialTheme.m; sourceTree = "<group>"; };
+		225CBCC31D431A43005E06EB /* TutorialKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialKit.h; path = TutorialKit/TutorialKit.h; sourceTree = "<group>"; };
 		22E2674A1D427B83000DD04F /* TutorialKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutorialKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E2674E1D427B83000DD04F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22E267501D427B83000DD04F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,12 +58,15 @@
 		225CBCB91D4317AB005E06EB /* TutorialKit */ = {
 			isa = PBXGroup;
 			children = (
+				225CBCC31D431A43005E06EB /* TutorialKit.h */,
 				225CBCB61D431791005E06EB /* TKTutorial.h */,
 				225CBCB71D431791005E06EB /* TKTutorial.m */,
 				225CBCBA1D4317DA005E06EB /* TKTutorialView.h */,
 				225CBCBB1D4317DA005E06EB /* TKTutorialView.m */,
 				225CBCBD1D431875005E06EB /* TKBannerTutorialView.h */,
 				225CBCBE1D431875005E06EB /* TKBannerTutorialView.m */,
+				225CBCC01D4319F9005E06EB /* TKTutorialTheme.h */,
+				225CBCC11D4319F9005E06EB /* TKTutorialTheme.m */,
 			);
 			name = TutorialKit;
 			sourceTree = "<group>";
@@ -179,6 +186,7 @@
 			files = (
 				22E267581D427B83000DD04F /* SecondViewController.m in Sources */,
 				22E267521D427B83000DD04F /* AppDelegate.m in Sources */,
+				225CBCC21D4319F9005E06EB /* TKTutorialTheme.m in Sources */,
 				225CBCB81D431791005E06EB /* TKTutorial.m in Sources */,
 				225CBCBF1D431875005E06EB /* TKBannerTutorialView.m in Sources */,
 				225CBCBC1D4317DA005E06EB /* TKTutorialView.m in Sources */,
