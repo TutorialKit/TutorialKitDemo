@@ -40,6 +40,7 @@
 		225CBCC31D431A43005E06EB /* TutorialKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialKit.h; path = TutorialKit/TutorialKit.h; sourceTree = "<group>"; };
 		2284318D1D43E26000E7172A /* TKLabelTutorialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKLabelTutorialView.h; path = TutorialKit/TKLabelTutorialView.h; sourceTree = "<group>"; };
 		2284318E1D43E26000E7172A /* TKLabelTutorialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKLabelTutorialView.m; path = TutorialKit/TKLabelTutorialView.m; sourceTree = "<group>"; };
+		228431921D43FC0900E7172A /* TutorialKitBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TutorialKitBridgingHeader.h; sourceTree = "<group>"; };
 		22E2674A1D427B83000DD04F /* TutorialKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutorialKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E2675A1D427B83000DD04F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22E2675C1D427B83000DD04F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 				94FBF7B31D4334D000D12213 /* HomeViewController.swift */,
 				94FBF7B51D4336B900D12213 /* SettingsViewController.swift */,
 				22E267591D427B83000DD04F /* Main.storyboard */,
+				228431921D43FC0900E7172A /* TutorialKitBridgingHeader.h */,
 				22E2675C1D427B83000DD04F /* Assets.xcassets */,
 				22E2675E1D427B83000DD04F /* LaunchScreen.storyboard */,
 				22E267611D427B83000DD04F /* Info.plist */,
@@ -328,6 +330,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aqueous.TutorialKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = TutorialKitDemo/TutorialKitBridgingHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -341,6 +344,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aqueous.TutorialKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = TutorialKitDemo/TutorialKitBridgingHeader.h;
 			};
 			name = Release;
 		};

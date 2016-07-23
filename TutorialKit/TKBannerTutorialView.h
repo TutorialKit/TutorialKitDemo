@@ -23,4 +23,6 @@ typedef enum
 @property (weak) UIViewController *viewController;
 @property (assign) TKBannerOrientation orientation;
 
++ (TKBannerTutorialView *)tutorialViewForViewController:(UIViewController *)viewController orientation:(TKBannerOrientation)orientation text:(NSString *)text theme:(TKTutorialTheme *)theme key:(NSString *)key;
+
 @end

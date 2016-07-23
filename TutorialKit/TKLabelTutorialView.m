@@ -22,8 +22,9 @@
     self.textLabel.textColor = self.theme.foregroundColor;
     self.textLabel.text = self.text;
     
-    r.size.height += labelRect.size.height + 2 * margin;
+    r.size.height += labelRect.size.height;
     self.bounds = r;
+    [self addSubview:self.textLabel];
 }
 
 - (float)measureTextForWidth:(float)width

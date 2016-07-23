@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var iWinButton: UIButton!
@@ -31,5 +32,11 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    override func viewWillAppear(animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        _ = TKBannerTutorialView(forViewController:self, orientation:kTKBannerOrientationBottom, text:"Press Button!", theme:TKTutorialTheme.defaultTheme(), key:"Enable I win")
+
+    }
 }
