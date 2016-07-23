@@ -11,6 +11,10 @@
 #import "TKTutorial.h"
 
 
+#define TAB_BAR_HEIGHT          (49)
+#define CLOCK_BAR_HEIGHT        (20)
+
+
 @implementation TKBannerTutorialView
 
 + (TKBannerTutorialView *)tutorialViewForViewController:(UIViewController *)viewController orientation:(TKBannerOrientation)orientation text:(NSString *)text theme:(TKTutorialTheme *)theme key:(NSString *)key
@@ -23,14 +27,22 @@
     
     tutorialView.text = text;
     tutorialView.theme = theme;
-    tutorialView.backgroundColor = [UIColor redColor];//theme.backgroundColor;
+    tutorialView.backgroundColor = tutorialView.theme.backgroundColor;
     [tutorialView setUpTextLabel];
     
     tutorialView.orientation = orientation;
     if (tutorialView.orientation == kTKBannerOrientationBottom)
     {
         r = tutorialView.frame;
-        r.origin.y = viewController.view.bounds.size.height - 49 - tutorialView.bounds.size.height;
+        r.origin.y = viewController.view.bounds.size.height - tutorialView.bounds.size.height;
+        if (viewController.tabBarController != nil)
+            r.origin.y -= TAB_BAR_HEIGHT;
+        tutorialView.frame = r;
+    }
+    else
+    {
+        r = tutorialView.frame;
+        r.origin.y = CLOCK_BAR_HEIGHT;
         tutorialView.frame = r;
     }
     

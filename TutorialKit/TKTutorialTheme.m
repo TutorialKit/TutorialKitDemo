@@ -19,9 +19,9 @@ static float defaultMargin;
 
 + (void)initialize
 {
-    defaultBackgroundColor = [UIColor whiteColor];
+    defaultBackgroundColor = [UIColor colorWithWhite:0.75 alpha:1.0];
     defaultForegroundColor = [UIColor blackColor];
-    defaultFont = [UIFont systemFontOfSize:15.0];
+    defaultFont = [UIFont boldSystemFontOfSize:17.0];
     defaultMargin = 10;
 }
 

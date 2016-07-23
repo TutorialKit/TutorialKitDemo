@@ -116,7 +116,6 @@
 				94FBF7B31D4334D000D12213 /* HomeViewController.swift */,
 				94FBF7B51D4336B900D12213 /* SettingsViewController.swift */,
 				22E267591D427B83000DD04F /* Main.storyboard */,
-				228431921D43FC0900E7172A /* TutorialKitBridgingHeader.h */,
 				22E2675C1D427B83000DD04F /* Assets.xcassets */,
 				22E2675E1D427B83000DD04F /* LaunchScreen.storyboard */,
 				22E267611D427B83000DD04F /* Info.plist */,
@@ -128,6 +127,7 @@
 		22E2674D1D427B83000DD04F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				228431921D43FC0900E7172A /* TutorialKitBridgingHeader.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

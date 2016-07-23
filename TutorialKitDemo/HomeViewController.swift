@@ -36,7 +36,7 @@ class HomeViewController: UIViewController {
     {
         super.viewWillAppear(animated)
         
-        _ = TKBannerTutorialView(forViewController:self, orientation:kTKBannerOrientationBottom, text:"Press Button!", theme:TKTutorialTheme.defaultTheme(), key:"Enable I win")
+        _ = TKBannerTutorialView(forViewController:self, orientation:kTKBannerOrientationTop, text:"Press Button!", theme:TKTutorialTheme.defaultTheme(), key:"Enable I win")
 
     }
 }
