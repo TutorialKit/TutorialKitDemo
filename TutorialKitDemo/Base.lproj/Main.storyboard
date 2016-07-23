@@ -18,15 +18,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDI-To-MxY">
-                                <rect key="frame" x="20" y="40" width="46" height="30"/>
+                                <rect key="frame" x="180" y="80" width="240" height="39"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Fdt-77-JSg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buttonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="pkw-Lx-lfx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ga-hy-VFo">
-                                <rect key="frame" x="20" y="110" width="32" height="30"/>
+                                <rect key="frame" x="180" y="159" width="240" height="39"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Qcm-kI-cC6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="I win"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="iWinButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="08c-KR-exN"/>
                                 </connections>
@@ -34,10 +54,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="9ga-hy-VFo" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="ZaH-JK-Y6d"/>
                             <constraint firstItem="9ga-hy-VFo" firstAttribute="top" secondItem="bDI-To-MxY" secondAttribute="bottom" constant="40" id="ejd-I1-DDJ"/>
-                            <constraint firstItem="9ga-hy-VFo" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="20" id="gRl-dv-sTq"/>
-                            <constraint firstItem="bDI-To-MxY" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="20" id="ijp-3H-Oth"/>
-                            <constraint firstItem="bDI-To-MxY" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="20" id="zAF-8x-wVr"/>
+                            <constraint firstItem="bDI-To-MxY" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="pch-FQ-9pu"/>
+                            <constraint firstItem="bDI-To-MxY" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="60" id="zAF-8x-wVr"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="HomeTabIcon" id="acW-dT-cKf"/>
