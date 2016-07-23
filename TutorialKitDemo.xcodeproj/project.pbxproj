@@ -21,6 +21,8 @@
 		94FBF7B01D432A4D00D12213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FBF7AD1D432A4D00D12213 /* AppDelegate.swift */; };
 		94FBF7B11D432A4D00D12213 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FBF7AE1D432A4D00D12213 /* FirstViewController.swift */; };
 		94FBF7B21D432A4D00D12213 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FBF7AF1D432A4D00D12213 /* SecondViewController.swift */; };
+		94FBF7B41D4334D000D12213 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FBF7B31D4334D000D12213 /* HomeViewController.swift */; };
+		94FBF7B61D4336B900D12213 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FBF7B51D4336B900D12213 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		94FBF7AD1D432A4D00D12213 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94FBF7AE1D432A4D00D12213 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		94FBF7AF1D432A4D00D12213 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		94FBF7B31D4334D000D12213 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		94FBF7B51D4336B900D12213 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				94FBF7AD1D432A4D00D12213 /* AppDelegate.swift */,
+				94FBF7B31D4334D000D12213 /* HomeViewController.swift */,
+				94FBF7B51D4336B900D12213 /* SettingsViewController.swift */,
 				94FBF7AE1D432A4D00D12213 /* FirstViewController.swift */,
 				94FBF7AF1D432A4D00D12213 /* SecondViewController.swift */,
 				22E267591D427B83000DD04F /* Main.storyboard */,
@@ -197,7 +203,9 @@
 				225CBCB81D431791005E06EB /* TKTutorial.m in Sources */,
 				94FBF7B01D432A4D00D12213 /* AppDelegate.swift in Sources */,
 				225CBCBF1D431875005E06EB /* TKBannerTutorialView.m in Sources */,
+				94FBF7B61D4336B900D12213 /* SettingsViewController.swift in Sources */,
 				225CBCBC1D4317DA005E06EB /* TKTutorialView.m in Sources */,
+				94FBF7B41D4334D000D12213 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
