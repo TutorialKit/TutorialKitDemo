@@ -39,7 +39,7 @@
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="HomeTabIcon" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,7 +106,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HomeTabIcon" width="30" height="30"/>
         <image name="SettingsTabIcon" width="30" height="30"/>
-        <image name="first" width="30" height="30"/>
     </resources>
 </document>
