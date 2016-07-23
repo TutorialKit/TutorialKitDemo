@@ -84,6 +84,9 @@
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cvI-EP-3C8">
                                 <rect key="frame" x="251" y="76" width="51" height="31"/>
+                                <connections>
+                                    <action selector="enableTutorialToggled:" destination="8rJ-Kc-sve" eventType="valueChanged" id="JAx-E9-iZk"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Tutorial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wys-qa-341">
                                 <rect key="frame" x="20" y="80" width="132" height="24"/>
@@ -121,6 +124,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="SettingsTabIcon" id="cPa-gy-q4n"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="enableTutorialSwitch" destination="cvI-EP-3C8" id="PoQ-0h-QrY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

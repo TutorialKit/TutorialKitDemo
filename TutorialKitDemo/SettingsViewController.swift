@@ -10,6 +10,12 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     
+    @IBOutlet weak var enableTutorialSwitch: UISwitch!
+    
+    @IBAction func enableTutorialToggled(sender: AnyObject) {
+        print("Enable Tutorial switch toggled to \(enableTutorialSwitch.on)")
+    }
+    
     @IBAction func resetTutorialSelected(sender: AnyObject) {
         print("Reset Tutorial button pressed")
     }
