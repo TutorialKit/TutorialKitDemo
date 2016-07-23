@@ -10,13 +10,9 @@
 
 @implementation TKBannerTutorialView
 
-
-
-
-
-
-
-
-
++ (TKBannerTutorialView *)tutorialViewForViewController:(UIViewController *)viewController orientation:(TKBannerOrientation)orientation text:(NSString *)text theme:(TKTutorialTheme *)theme
+{
+    return nil;
+}
 
 @end

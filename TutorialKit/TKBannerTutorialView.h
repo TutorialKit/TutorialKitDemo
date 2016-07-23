@@ -11,14 +11,16 @@
 #import "TKLabelTutorialView.h"
 
 
-enum
+typedef enum
 {
-    kBannerPositionTop,
-    kBannerPositionBottom
-} TKBannerPosition;
+    kBannerOrientationTop,
+    kBannerOrientationBottom
+} TKBannerOrientation;
 
 
 @interface TKBannerTutorialView : TKLabelTutorialView
 
+@property (weak) UIViewController *viewController;
+@property (assign) TKBannerOrientation orientation;
 
 @end

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-enum
+typedef enum
 {
     TKTHEME_BACKGROUNDCOLOR = 0,
     TKTHEME_FOREGROUNDCOLOR,
