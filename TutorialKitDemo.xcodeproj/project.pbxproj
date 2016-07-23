@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222489741D432BFC00594453 /* TKBubbleTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 222489731D432BFC00594453 /* TKBubbleTutorialView.m */; };
+		222489771D432C0A00594453 /* TKTouchTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 222489761D432C0A00594453 /* TKTouchTutorialView.m */; };
 		225CBCB81D431791005E06EB /* TKTutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CBCB71D431791005E06EB /* TKTutorial.m */; };
 		225CBCBC1D4317DA005E06EB /* TKTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CBCBB1D4317DA005E06EB /* TKTutorialView.m */; };
 		225CBCBF1D431875005E06EB /* TKBannerTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CBCBE1D431875005E06EB /* TKBannerTutorialView.m */; };
@@ -22,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		222489721D432BFC00594453 /* TKBubbleTutorialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKBubbleTutorialView.h; path = TutorialKit/TKBubbleTutorialView.h; sourceTree = "<group>"; };
+		222489731D432BFC00594453 /* TKBubbleTutorialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKBubbleTutorialView.m; path = TutorialKit/TKBubbleTutorialView.m; sourceTree = "<group>"; };
+		222489751D432C0A00594453 /* TKTouchTutorialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKTouchTutorialView.h; path = TutorialKit/TKTouchTutorialView.h; sourceTree = "<group>"; };
+		222489761D432C0A00594453 /* TKTouchTutorialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKTouchTutorialView.m; path = TutorialKit/TKTouchTutorialView.m; sourceTree = "<group>"; };
 		225CBCB61D431791005E06EB /* TKTutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKTutorial.h; path = TutorialKit/TKTutorial.h; sourceTree = "<group>"; };
 		225CBCB71D431791005E06EB /* TKTutorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TKTutorial.m; path = TutorialKit/TKTutorial.m; sourceTree = "<group>"; };
 		225CBCBA1D4317DA005E06EB /* TKTutorialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TKTutorialView.h; path = TutorialKit/TKTutorialView.h; sourceTree = "<group>"; };
@@ -62,6 +68,10 @@
 				225CBCBB1D4317DA005E06EB /* TKTutorialView.m */,
 				225CBCBD1D431875005E06EB /* TKBannerTutorialView.h */,
 				225CBCBE1D431875005E06EB /* TKBannerTutorialView.m */,
+				222489721D432BFC00594453 /* TKBubbleTutorialView.h */,
+				222489731D432BFC00594453 /* TKBubbleTutorialView.m */,
+				222489751D432C0A00594453 /* TKTouchTutorialView.h */,
+				222489761D432C0A00594453 /* TKTouchTutorialView.m */,
 				225CBCC01D4319F9005E06EB /* TKTutorialTheme.h */,
 				225CBCC11D4319F9005E06EB /* TKTutorialTheme.m */,
 			);
@@ -178,7 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E267581D427B83000DD04F /* (null) in Sources */,
+				222489741D432BFC00594453 /* TKBubbleTutorialView.m in Sources */,
 				22E267521D427B83000DD04F /* (null) in Sources */,
+				222489771D432C0A00594453 /* TKTouchTutorialView.m in Sources */,
 				225CBCC21D4319F9005E06EB /* TKTutorialTheme.m in Sources */,
 				94FBF7B21D432A4D00D12213 /* SecondViewController.swift in Sources */,
 				94FBF7B11D432A4D00D12213 /* FirstViewController.swift in Sources */,
