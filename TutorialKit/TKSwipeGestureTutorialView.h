@@ -1,5 +1,5 @@
 //
-//  TKGestureTutorialView.h
+//  TKSwipeGestureTutorialView.h
 //  TutorialKitDemo
 //
 //  Created by Tim Kokesh on 7/23/16.
@@ -9,6 +9,8 @@
 #import "TKTutorialView.h"
 
 
-@interface TKGestureTutorialView : TKTutorialView
+@interface TKSwipeGestureTutorialView : TKTutorialView
+
+@property (strong) UIView *interiorView;
 
 @end
