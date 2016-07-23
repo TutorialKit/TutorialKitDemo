@@ -8,11 +8,45 @@
 
 #import "TKTutorialView.h"
 
+#import "TKTutorial.h"
+
+
+static NSMutableDictionary *viewLookup;
+
+
 @implementation TKTutorialView
+
++ (void)initialize
+{
+    viewLookup = [[NSMutableDictionary alloc] init];
+}
 
 + (TKTutorialView *)tutorialView
 {
     return nil;
+}
+
++ (void)addTutorialView:(TKTutorialView *)tutorialView forKey:(NSString *)key
+{
+    [viewLookup setObject:tutorialView forKey:key];
+}
+
++ (void)setKey:(NSString *)key
+{
+    if (key == nil)
+        return;
+    
+    TKTutorialView *tutorialView = [viewLookup objectForKey:key];
+    if (tutorialView == nil)
+        return;
+    [tutorialView end];
+    
+    [viewLookup removeObjectForKey:key];
+}
+
+- (void)end
+{
+    
 }
 
 @end

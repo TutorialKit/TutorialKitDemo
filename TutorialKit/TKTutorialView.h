@@ -15,4 +15,9 @@
 
 @property (strong) TKTutorialTheme *theme;
 
++ (void)addTutorialView:(TKTutorialView *)tutorialView forKey:(NSString *)key;
++ (void)setKey:(NSString *)key;
+
+- (void)end;
+
 @end

@@ -40,7 +40,7 @@
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
-    NSMutableDictionary *keyList = [defaults objectForKey:TUTORIALKITKEY];
+    NSMutableDictionary *keyList = [[defaults objectForKey:TUTORIALKITKEY] mutableCopy];
     [keyList setObject:@YES forKey:key];
     [defaults setObject:keyList forKey:TUTORIALKITKEY];
     [defaults synchronize];
