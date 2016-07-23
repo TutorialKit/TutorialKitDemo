@@ -12,6 +12,10 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet weak var enableTutorialSwitch: UISwitch!
     
+    @IBAction func tutorialThemeButtonPressed(sender: AnyObject) {
+        print("Tutorial Theme area button pressed")
+    }
+    
     @IBAction func enableTutorialToggled(sender: AnyObject) {
         print("Enable Tutorial switch toggled to \(enableTutorialSwitch.on)")
     }

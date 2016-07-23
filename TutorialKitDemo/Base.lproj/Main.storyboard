@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ga-hy-VFo">
-                                <rect key="frame" x="40" y="159" width="240" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ga-hy-VFo">
+                                <rect key="frame" x="40" y="156" width="240" height="36"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="Qcm-kI-cC6"/>
@@ -34,8 +34,8 @@
                                     <action selector="iWinButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="08c-KR-exN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDI-To-MxY">
-                                <rect key="frame" x="40" y="80" width="240" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDI-To-MxY">
+                                <rect key="frame" x="40" y="80" width="240" height="36"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="Fdt-77-JSg"/>
@@ -94,8 +94,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutorial Theme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqo-U6-Vjk">
+                                <rect key="frame" x="20" y="144" width="134" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEt-fs-33y">
-                                <rect key="frame" x="40" y="167" width="240" height="36"/>
+                                <rect key="frame" x="40" y="208" width="240" height="36"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="msW-ja-QOh"/>
@@ -111,14 +117,24 @@
                                     <action selector="resetTutorialSelected:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="NNa-Mg-Qux"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pink/Yellow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eA-VJ-EqN">
+                                <rect key="frame" x="213" y="146.5" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LEt-fs-33y" firstAttribute="top" secondItem="cvI-EP-3C8" secondAttribute="bottom" constant="60" id="EsO-FM-DAS"/>
+                            <constraint firstAttribute="trailing" secondItem="4eA-VJ-EqN" secondAttribute="trailing" constant="20" id="1Pn-c6-5Fz"/>
+                            <constraint firstItem="hqo-U6-Vjk" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="20" id="79w-f9-Taf"/>
+                            <constraint firstItem="4eA-VJ-EqN" firstAttribute="baseline" secondItem="hqo-U6-Vjk" secondAttribute="baseline" id="7bc-9v-ZXa"/>
                             <constraint firstItem="wys-qa-341" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="20" id="Xfk-ru-IA3"/>
                             <constraint firstAttribute="trailing" secondItem="cvI-EP-3C8" secondAttribute="trailing" constant="20" id="dsR-QH-auU"/>
                             <constraint firstItem="wys-qa-341" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="60" id="eb4-Uz-HWB"/>
                             <constraint firstItem="cvI-EP-3C8" firstAttribute="centerY" secondItem="wys-qa-341" secondAttribute="centerY" id="htz-Bw-dNg"/>
+                            <constraint firstItem="hqo-U6-Vjk" firstAttribute="top" secondItem="wys-qa-341" secondAttribute="bottom" constant="40" id="iKg-fI-0d0"/>
+                            <constraint firstItem="LEt-fs-33y" firstAttribute="top" secondItem="hqo-U6-Vjk" secondAttribute="bottom" constant="40" id="snD-7d-0s6"/>
                             <constraint firstItem="LEt-fs-33y" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="u4s-cI-JmC"/>
                         </constraints>
                     </view>
@@ -130,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="750" y="353"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
