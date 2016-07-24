@@ -11,5 +11,6 @@
 
 @interface TKTapGestureTutorialView : TKGestureTutorialView
 
++ (TKTapGestureTutorialView *)tapTutorialViewForView:(UIView *)view gesture:(UIGestureRecognizer *)gestureRecognizer theme:(TKTutorialTheme *)theme key:(NSString *)key;
 
 @end

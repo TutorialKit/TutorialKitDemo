@@ -135,6 +135,9 @@
                     <tabBarItem key="tabBarItem" title="Tap" image="StarTabIcon" id="hWl-HY-Qsb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="b1Button" destination="ZGp-l8-FNM" id="vdW-il-nTO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nf8-jP-4GE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

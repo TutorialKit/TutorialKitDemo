@@ -27,14 +27,20 @@
     tutorialView.gestureRecognizer = gestureRecognizer;
     [gestureRecognizer addTarget:tutorialView action:@selector(end)];
     
-    CGRect interiorViewRect = CGRectInset(r, 5, 5);
+/*    CGRect interiorViewRect = CGRectInset(r, 5, 5);
     interiorViewRect.origin = CGPointMake(5, 5);
     tutorialView.interiorView = [[UIView alloc] initWithFrame:interiorViewRect];
-    [tutorialView addSubview:tutorialView.interiorView];
+    [tutorialView addSubview:tutorialView.interiorView];*/
+    tutorialView.alpha = 0.0;
 
     tutorialView.theme = theme;
     [view addSubview:tutorialView];
-    
+
+    [UIView animateWithDuration:0.25 animations:^(void)
+     {
+         tutorialView.alpha = 1.0;
+     }];
+
     return tutorialView;
 }
 

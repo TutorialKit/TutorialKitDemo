@@ -9,7 +9,9 @@
 import Foundation
 
 class TapViewController: UIViewController {
-    
+
+    @IBOutlet weak var b1Button: UIButton!
+
     @IBAction func b1Tapped(sender: AnyObject) {
     }
     
@@ -30,5 +32,9 @@ class TapViewController: UIViewController {
     override func viewWillAppear(animated: Bool)
     {
         super.viewWillAppear(animated)
+        
+        let tapGestureRecognizer = UITapGestureRecognizer()
+        self.b1Button.addGestureRecognizer(tapGestureRecognizer)
+        _ = TKTapGestureTutorialView.tapTutorialViewForView(self.b1Button, gesture:tapGestureRecognizer, theme:TKTapGestureTutorialView.defaultTheme(), key:"tapgesturething")
     }
 }
