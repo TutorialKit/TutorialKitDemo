@@ -11,6 +11,6 @@
 #import "TKTutorialView.h"
 #import "TKBannerTutorialView.h"
 #import "TKBubbleTutorialView.h"
-#import "TKTapGestureTutorialView"
-#import "TKSwipeGestureTutorialView"
+#import "TKTapGestureTutorialView.h"
+#import "TKSwipeGestureTutorialView.h"
 #import "TKTutorialTheme.h"
