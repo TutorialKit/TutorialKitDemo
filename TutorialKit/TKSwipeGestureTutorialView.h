@@ -6,11 +6,10 @@
 //  Copyright © 2016 Aqueous Software. All rights reserved.
 //
 
-#import "TKTutorialView.h"
+#import "TKGestureTutorialView.h"
 
 
-@interface TKSwipeGestureTutorialView : TKTutorialView
+@interface TKSwipeGestureTutorialView : TKGestureTutorialView
 
-@property (strong) UIView *interiorView;
 
 @end

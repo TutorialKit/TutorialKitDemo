@@ -30,6 +30,8 @@
     
 //    CGRect newFrame = tutorialView.frame;
     
+    [tutorialView.gestureRecognizer addTarget:self action:@selector(end)];
+    
     
     return tutorialView;
 }
