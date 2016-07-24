@@ -68,13 +68,13 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
                 let cell2deselect = tableView.cellForRowAtIndexPath(indexPathDeselect)
                 cell2deselect!.accessoryType = .None
 
-                // select new theme
+                // select new theme for home screen
                 cell.accessoryType = .Checkmark
                 tutorialTheme = (cell.textLabel?.text)!
-                //        let theme = TKTutorialTheme.defaultTheme()
-                //        theme.foregroundColor = UIColor.yellowColor()
-                //        theme.backgroundColor = UIColor.blackColor()
-                //        _ = TKBannerTutorialView(forViewController:self, orientation:kTKBannerOrientationBottom, text:"Press Button!", theme:theme, key:"Enable I win")
+                let theme = TKBannerTutorialView.defaultTheme()
+                theme.foregroundColor = UIColor.yellowColor()
+                theme.backgroundColor = UIColor.blackColor()
+                _ = TKBannerTutorialView(forViewController:self, orientation:kTKBannerOrientationBottom, text:"Press Button!", theme:theme, key:"Enable I win")
             }
         }
     }

@@ -36,7 +36,10 @@ class HomeViewController: UIViewController {
     {
         super.viewWillAppear(animated)
         
+        iWinButton.enabled = false
+        
         let theme = TKBannerTutorialView.defaultTheme()
+        // get theme colors from demo app (setting)
         _ = TKBannerTutorialView(forViewController:self, orientation:kTKBannerOrientationBottom, text:"Press Button!", theme:theme, key:"Enable I win")
     }
 }
