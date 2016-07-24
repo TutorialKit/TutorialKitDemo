@@ -81,7 +81,47 @@
                     <view key="view" contentMode="scaleToFill" id="UHm-fR-sb0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGp-l8-FNM">
+                                <rect key="frame" x="20" y="50" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="awX-GF-Dfn"/>
+                                    <constraint firstAttribute="height" constant="60" id="nmO-ML-ayG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGz-LJ-mco">
+                                <rect key="frame" x="20" y="140" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="E5z-eb-NAH"/>
+                                    <constraint firstAttribute="width" constant="60" id="sfR-YN-kQk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vqa-Br-nbV">
+                                <rect key="frame" x="20" y="230" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Tvw-Bc-h06"/>
+                                    <constraint firstAttribute="width" constant="60" id="z5L-NV-WWM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AGz-LJ-mco" firstAttribute="top" secondItem="ZGp-l8-FNM" secondAttribute="bottom" constant="30" id="3Hv-Ad-lV9"/>
+                            <constraint firstItem="Vqa-Br-nbV" firstAttribute="top" secondItem="AGz-LJ-mco" secondAttribute="bottom" constant="30" id="454-pG-9jP"/>
+                            <constraint firstItem="Vqa-Br-nbV" firstAttribute="leading" secondItem="UHm-fR-sb0" secondAttribute="leading" constant="20" id="52p-Ki-5vh"/>
+                            <constraint firstItem="AGz-LJ-mco" firstAttribute="leading" secondItem="UHm-fR-sb0" secondAttribute="leading" constant="20" id="DGz-HP-NAV"/>
+                            <constraint firstItem="ZGp-l8-FNM" firstAttribute="leading" secondItem="UHm-fR-sb0" secondAttribute="leading" constant="20" id="TMU-2f-cmr"/>
+                            <constraint firstItem="ZGp-l8-FNM" firstAttribute="top" secondItem="MAX-3C-zm4" secondAttribute="bottom" constant="30" id="lVf-4B-kho"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tap" image="StarTabIcon" id="kGg-gu-f8J"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -94,7 +134,7 @@
         <!--Swipe-->
         <scene sceneID="faI-mB-Sz8">
             <objects>
-                <viewController id="IHJ-3e-vKW" sceneMemberID="viewController">
+                <viewController id="IHJ-3e-vKW" customClass="SwipeViewController" customModule="TutorialKitDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C4B-vX-6OW"/>
                         <viewControllerLayoutGuide type="bottom" id="9Tr-yS-X6O"/>
@@ -102,11 +142,26 @@
                     <view key="view" contentMode="scaleToFill" id="PXa-U7-1hf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swiper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47B-wh-ND1">
+                                <rect key="frame" x="134" y="273" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="47B-wh-ND1" firstAttribute="centerY" secondItem="PXa-U7-1hf" secondAttribute="centerY" id="phW-jI-unh"/>
+                            <constraint firstItem="47B-wh-ND1" firstAttribute="centerX" secondItem="PXa-U7-1hf" secondAttribute="centerX" id="u6O-Qg-wSO"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Swipe" image="SwipeTabIcon" id="S9M-ey-Xb1"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="swiperLabel" destination="47B-wh-ND1" id="jfe-EK-Tnh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ToV-vF-WX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
