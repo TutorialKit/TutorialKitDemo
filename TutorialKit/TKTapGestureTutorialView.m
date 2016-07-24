@@ -13,29 +13,35 @@
 
 @implementation TKTapGestureTutorialView
 
-+ (TKTapGestureTutorialView *)tutorialViewForView:(UIView *)view gesture:(UIGestureRecognizer *)gestureRecognizer theme:(TKTutorialTheme *)theme key:(NSString *)key
++ (TKTapGestureTutorialView *)tapTutorialViewForView:(UIView *)view gesture:(UIGestureRecognizer *)gestureRecognizer theme:(TKTutorialTheme *)theme key:(NSString *)key
 {
     if ([TKTutorial keyUsed:key])
         return nil;
     [TKTutorial setKey:key];
     
-    CGRect r;
+    CGPoint center = view.center;
+    CGRect r = CGRectMake(center.x - GESTURE_DOT_SIZE / 2, center.y - GESTURE_DOT_SIZE / 2, GESTURE_DOT_SIZE, GESTURE_DOT_SIZE);
     TKTapGestureTutorialView *tutorialView = [[TKTapGestureTutorialView alloc] initWithFrame:r];
     [TKTutorialView addTutorialView:tutorialView forKey:key];
+    
+    tutorialView.gestureRecognizer = gestureRecognizer;
+    [gestureRecognizer addTarget:tutorialView action:@selector(end)];
+    
+    CGRect interiorViewRect = CGRectInset(r, 5, 5);
+    interiorViewRect.origin = CGPointMake(5, 5);
+    tutorialView.interiorView = [[UIView alloc] initWithFrame:interiorViewRect];
+    [tutorialView addSubview:tutorialView.interiorView];
 
     tutorialView.theme = theme;
-    
     [view addSubview:tutorialView];
-    
-//    CGRect newFrame = tutorialView.frame;
-    
     
     return tutorialView;
 }
 
 - (void)end
 {
-    
+    [self.gestureRecognizer removeTarget:self action:@selector(end)];
+    [self removeFromSuperview];
 }
 
 @end

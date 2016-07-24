@@ -8,7 +8,7 @@
 
 #import "TKTutorialView.h"
 
-#import "TKTutorial.h"
+#import "TKTutorialTheme.h"
 
 
 static NSMutableDictionary *viewLookup;
@@ -43,6 +43,12 @@ static NSMutableDictionary *viewLookup;
     
     [viewLookup removeObjectForKey:key];
 }
+
++ (TKTutorialTheme *)defaultTheme
+{
+    return [[TKTutorialTheme alloc] init];
+}
+
 
 - (void)end
 {

@@ -13,7 +13,7 @@
 
 @implementation TKSwipeGestureTutorialView
 
-+ (TKSwipeGestureTutorialView *)tutorialViewForView:(UIView *)view gesture:(UIGestureRecognizer *)gestureRecognizer theme:(TKTutorialTheme *)theme key:(NSString *)key
+/*+ (TKSwipeGestureTutorialView *)tutorialViewForView:(UIView *)view gesture:(UIGestureRecognizer *)gestureRecognizer theme:(TKTutorialTheme *)theme key:(NSString *)key
 {
     if ([TKTutorial keyUsed:key])
         return nil;
@@ -48,6 +48,6 @@
     CGContextSetLineWidth(c, 4);
     CGContextSetStrokeColorWithColor(c, [self.theme.foregroundColor CGColor]);
     CGContextStrokeEllipseInRect(c, self.bounds);
-}
+}*/
 
 @end

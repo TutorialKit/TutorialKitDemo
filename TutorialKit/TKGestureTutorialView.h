@@ -8,6 +8,10 @@
 
 #import "TKTutorialView.h"
 
+
+#define GESTURE_DOT_SIZE        (60)
+
+
 @interface TKGestureTutorialView : TKTutorialView
 
 @property (strong) UIView *interiorView;
