@@ -20,7 +20,7 @@
     theme.backgroundColor = [UIColor whiteColor];
     theme.foregroundColor = [UIColor blackColor];
     theme.font = [UIFont systemFontOfSize:12.0];
-    theme.margin = 5;
+    theme.margin = 10;
     
     return theme;
 }
@@ -31,7 +31,7 @@
         return nil;
     [TKTutorial setKey:key];
     
-    CGRect r = CGRectMake(0, 0, viewController.view.bounds.size.width, theme.margin * 2);
+    CGRect r = CGRectMake(theme.margin, 0, viewController.view.bounds.size.width - theme.margin * 2, 10);
     TKBubbleTutorialView *tutorialView = [[TKBubbleTutorialView alloc] initWithFrame:r];
     [TKTutorialView addTutorialView:tutorialView forKey:key];
     
@@ -39,36 +39,31 @@
     tutorialView.theme = theme;
     tutorialView.backgroundColor = tutorialView.theme.backgroundColor;
     [tutorialView setUpTextLabel];
+    tutorialView.alpha = 0.0;
+    tutorialView.layer.cornerRadius = 5;
+    tutorialView.layer.borderColor = [theme.foregroundColor CGColor];
     
-/*    tutorialView.orientation = orientation;
-    if (tutorialView.orientation == kTKBannerOrientationBottom)
+    tutorialView.orientation = orientation;
+    if (tutorialView.orientation == kTKBubbleOrientationBelow)
     {
         r = tutorialView.frame;
-        r.origin.y = viewController.view.bounds.size.height;
-        if (viewController.tabBarController != nil)
-            r.origin.y -= TAB_BAR_HEIGHT;
+        r.origin.y = view.frame.origin.y + view.frame.size.height + 5;
         tutorialView.frame = r;
     }
     else
     {
         r = tutorialView.frame;
-        r.origin.y = CLOCK_BAR_HEIGHT - tutorialView.bounds.size.height;
+        r.origin.y = view.frame.origin.y - 5 - tutorialView.bounds.size.height;
         tutorialView.frame = r;
     }
     
     [viewController.view addSubview:tutorialView];
     
-    CGRect newFrame = tutorialView.frame;
-    if (tutorialView.orientation == kTKBannerOrientationBottom)
-        newFrame.origin.y -= tutorialView.bounds.size.height;
-    else
-        newFrame.origin.y += tutorialView.bounds.size.height;
-    
-    [UIView animateWithDuration:0.5 animations:^(void)
+    [UIView animateWithDuration:0.25 animations:^(void)
      {
-         tutorialView.frame = newFrame;
+         tutorialView.alpha = 1.0;
      }];
-    */
+    
     return tutorialView;
 }
 

@@ -6,9 +6,11 @@
 //  Copyright © 2016 Aqueous Software. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class BalloonViewController: UIViewController {
+
+    @IBOutlet weak var leftButton: UIButton!
     
     @IBAction func leftButtonPressed(sender: AnyObject) {
     }
@@ -27,5 +29,8 @@ class BalloonViewController: UIViewController {
     override func viewWillAppear(animated: Bool)
     {
         super.viewWillAppear(animated)
+        
+        _ = TKBubbleTutorialView(forViewController:self, view:self.leftButton, orientation:kTKBubbleOrientationBelow, text:"This buttton does blah blah blah!", theme:TKBubbleTutorialView.defaultTheme(), key:"Bubble button left")
+
     }
 }

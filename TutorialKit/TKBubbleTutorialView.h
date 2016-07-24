@@ -18,4 +18,8 @@ typedef enum
 
 @interface TKBubbleTutorialView : TKLabelTutorialView
 
+@property (assign) TKBubbleOrientation orientation;
+
++ (TKBubbleTutorialView *)bubbleTutorialViewForViewController:(UIViewController *)viewController view:(UIView *)view orientation:(TKBubbleOrientation)orientation text:(NSString *)text theme:(TKTutorialTheme *)theme key:(NSString *)key;
+
 @end
