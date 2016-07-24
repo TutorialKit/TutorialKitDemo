@@ -13,6 +13,18 @@
 
 @implementation TKBubbleTutorialView
 
++ (TKTutorialTheme *)defaultTheme
+{
+    TKTutorialTheme *theme = [[TKTutorialTheme alloc] init];
+    
+    theme.backgroundColor = [UIColor whiteColor];
+    theme.foregroundColor = [UIColor blackColor];
+    theme.font = [UIFont systemFontOfSize:12.0];
+    theme.margin = 5;
+    
+    return theme;
+}
+
 + (TKBubbleTutorialView *)bubbleTutorialViewForViewController:(UIViewController *)viewController view:(UIView *)view orientation:(TKBubbleOrientation)orientation text:(NSString *)text theme:(TKTutorialTheme *)theme key:(NSString *)key
 {
     if ([TKTutorial keyUsed:key])

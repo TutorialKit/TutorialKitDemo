@@ -10,6 +10,16 @@
 
 @implementation TKGestureTutorialView
 
++ (TKTutorialTheme *)defaultTheme
+{
+    TKTutorialTheme *theme = [[TKTutorialTheme alloc] init];
+    
+    theme.foregroundColor = [UIColor whiteColor];
+    
+    return theme;
+}
+
+
 - (void)drawRect:(CGRect)rect
 {
     CGContextRef c = UIGraphicsGetCurrentContext();

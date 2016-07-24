@@ -17,6 +17,7 @@
 
 + (void)addTutorialView:(TKTutorialView *)tutorialView forKey:(NSString *)key;
 + (void)setKey:(NSString *)key;
++ (TKTutorialTheme *)defaultTheme;
 
 - (void)end;
 

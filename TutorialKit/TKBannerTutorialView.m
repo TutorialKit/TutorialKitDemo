@@ -17,6 +17,18 @@
 
 @implementation TKBannerTutorialView
 
++ (TKTutorialTheme *)defaultTheme
+{
+    TKTutorialTheme *theme = [[TKTutorialTheme alloc] init];
+
+    theme.backgroundColor = [UIColor colorWithWhite:0.75 alpha:1.0];
+    theme.foregroundColor = [UIColor blackColor];
+    theme.font = [UIFont boldSystemFontOfSize:17.0];
+    theme.margin = 10;
+
+    return theme;
+}
+
 + (TKBannerTutorialView *)bannerTutorialViewForViewController:(UIViewController *)viewController orientation:(TKBannerOrientation)orientation text:(NSString *)text theme:(TKTutorialTheme *)theme key:(NSString *)key
 {
     if ([TKTutorial keyUsed:key])

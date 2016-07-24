@@ -36,11 +36,8 @@ class HomeViewController: UIViewController {
     {
         super.viewWillAppear(animated)
         
-//        let theme = TKTutorialTheme.defaultTheme()
-//        theme.foregroundColor = UIColor.yellowColor()
-//        theme.backgroundColor = UIColor.blackColor()
-//        _ = TKBannerTutorialView(forViewController:self, orientation:kTKBannerOrientationBottom, text:"Press Button!", theme:theme, key:"Enable I win")
-        _ = TKBannerTutorialView(forViewController:self, orientation:kTKBannerOrientationBottom, text:"Press Button!", theme:TKTutorialTheme.defaultTheme(), key:"Enable I win")
+        let theme = TKBannerTutorialView.defaultTheme()
+        _ = TKBannerTutorialView(forViewController:self, orientation:kTKBannerOrientationBottom, text:"Press Button!", theme:theme, key:"Enable I win")
     }
 }
 

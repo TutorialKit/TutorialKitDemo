@@ -16,7 +16,6 @@
 @property (strong) UIFont *font;
 @property (assign) float margin;
 
-+ (TKTutorialTheme *)defaultTheme;
 + (TKTutorialTheme *)themeFromDictionary:(NSDictionary *)themeDict;
 
 @end
