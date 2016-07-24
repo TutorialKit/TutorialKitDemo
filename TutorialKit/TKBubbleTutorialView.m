@@ -17,10 +17,10 @@
 {
     TKTutorialTheme *theme = [[TKTutorialTheme alloc] init];
     
-    theme.backgroundColor = [UIColor whiteColor];
+    theme.backgroundColor = [UIColor colorWithWhite:0.75 alpha:1.0];
     theme.foregroundColor = [UIColor blackColor];
     theme.font = [UIFont systemFontOfSize:12.0];
-    theme.margin = 10;
+    theme.margin = 5;
     
     return theme;
 }
@@ -31,7 +31,7 @@
         return nil;
     [TKTutorial setKey:key];
     
-    CGRect r = CGRectMake(theme.margin, 0, viewController.view.bounds.size.width - theme.margin * 2, 10);
+    CGRect r = CGRectMake(theme.margin, 0, viewController.view.bounds.size.width - theme.margin * 2, 20);
     TKBubbleTutorialView *tutorialView = [[TKBubbleTutorialView alloc] initWithFrame:r];
     [TKTutorialView addTutorialView:tutorialView forKey:key];
     
@@ -42,6 +42,7 @@
     tutorialView.alpha = 0.0;
     tutorialView.layer.cornerRadius = 5;
     tutorialView.layer.borderColor = [theme.foregroundColor CGColor];
+    tutorialView.layer.borderWidth = 1.0;
     
     tutorialView.orientation = orientation;
     if (tutorialView.orientation == kTKBubbleOrientationBelow)
@@ -57,6 +58,8 @@
         tutorialView.frame = r;
     }
     
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:tutorialView action:@selector(end)];
+    [tutorialView addGestureRecognizer:tapGestureRecognizer];
     [viewController.view addSubview:tutorialView];
     
     [UIView animateWithDuration:0.25 animations:^(void)
