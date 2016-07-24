@@ -8,6 +8,14 @@
 
 #import "TKLabelTutorialView.h"
 
+
+typedef enum
+{
+    kTKBubbleOrientationAbove,
+    kTKBubbleOrientationBelow
+} TKBubbleOrientation;
+
+
 @interface TKBubbleTutorialView : TKLabelTutorialView
 
 @end
