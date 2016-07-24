@@ -15,7 +15,7 @@
     TKTutorialTheme *theme = [[TKTutorialTheme alloc] init];
     
     theme.foregroundColor = [UIColor whiteColor];
-    theme.foregroundColor = [UIColor blueColor];
+    theme.backgroundColor = [UIColor blueColor];
     
     return theme;
 }
@@ -25,11 +25,12 @@
 {
     CGContextRef c = UIGraphicsGetCurrentContext();
     
+    CGRect r = CGRectInset(self.bounds, 2, 2);
     CGContextSetLineWidth(c, 4);
     CGContextSetFillColorWithColor(c, [self.theme.backgroundColor CGColor]);
-    CGContextFillEllipseInRect(c, self.bounds);
+    CGContextFillEllipseInRect(c, r);
     CGContextSetStrokeColorWithColor(c, [self.theme.foregroundColor CGColor]);
-    CGContextStrokeEllipseInRect(c, self.bounds);
+    CGContextStrokeEllipseInRect(c, r);
 }
 
 @end

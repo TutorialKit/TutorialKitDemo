@@ -19,8 +19,8 @@
         return nil;
     [TKTutorial setKey:key];
     
-    CGPoint center = view.center;
-    CGRect r = CGRectMake(center.x - GESTURE_DOT_SIZE / 2, center.y - GESTURE_DOT_SIZE / 2, GESTURE_DOT_SIZE, GESTURE_DOT_SIZE);
+//    CGPoint center = view.center;
+    CGRect r = CGRectMake((view.bounds.size.width - GESTURE_DOT_SIZE) / 2, (view.bounds.size.height - GESTURE_DOT_SIZE) / 2, GESTURE_DOT_SIZE, GESTURE_DOT_SIZE);
     TKTapGestureTutorialView *tutorialView = [[TKTapGestureTutorialView alloc] initWithFrame:r];
     [TKTutorialView addTutorialView:tutorialView forKey:key];
     
@@ -32,6 +32,7 @@
     tutorialView.interiorView = [[UIView alloc] initWithFrame:interiorViewRect];
     [tutorialView addSubview:tutorialView.interiorView];*/
     tutorialView.alpha = 0.0;
+    tutorialView.backgroundColor = [UIColor clearColor];
 
     tutorialView.theme = theme;
     [view addSubview:tutorialView];
