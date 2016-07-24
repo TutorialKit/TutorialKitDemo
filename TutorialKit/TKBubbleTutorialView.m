@@ -17,7 +17,7 @@
 {
     TKTutorialTheme *theme = [[TKTutorialTheme alloc] init];
     
-    theme.backgroundColor = [UIColor colorWithWhite:0.75 alpha:1.0];
+    theme.backgroundColor = [UIColor whiteColor];
     theme.foregroundColor = [UIColor blackColor];
     theme.font = [UIFont systemFontOfSize:12.0];
     theme.margin = 5;
