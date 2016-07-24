@@ -94,14 +94,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutorial Theme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqo-U6-Vjk">
-                                <rect key="frame" x="20" y="144" width="134" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEt-fs-33y">
-                                <rect key="frame" x="40" y="208" width="240" height="36"/>
+                                <rect key="frame" x="40" y="147" width="240" height="36"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="msW-ja-QOh"/>
@@ -117,32 +111,34 @@
                                     <action selector="resetTutorialSelected:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="NNa-Mg-Qux"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pink/Yellow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eA-VJ-EqN">
-                                <rect key="frame" x="213" y="146.5" width="87" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4jb-tI-NZ9">
-                                <rect key="frame" x="40" y="260" width="240" height="223"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4jb-tI-NZ9">
+                                <rect key="frame" x="20" y="291" width="280" height="188"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="8rJ-Kc-sve" id="MnK-mL-WS0"/>
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="s5V-gE-OlZ"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tutorial Theme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trD-oE-RSW">
+                                <rect key="frame" x="18" y="227" width="134" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="4eA-VJ-EqN" secondAttribute="trailing" constant="20" id="1Pn-c6-5Fz"/>
-                            <constraint firstItem="hqo-U6-Vjk" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="20" id="79w-f9-Taf"/>
-                            <constraint firstItem="4eA-VJ-EqN" firstAttribute="baseline" secondItem="hqo-U6-Vjk" secondAttribute="baseline" id="7bc-9v-ZXa"/>
+                            <constraint firstItem="trD-oE-RSW" firstAttribute="top" secondItem="LEt-fs-33y" secondAttribute="bottom" constant="44" id="06P-6n-wgK"/>
+                            <constraint firstAttribute="trailing" secondItem="4jb-tI-NZ9" secondAttribute="trailing" constant="20" id="20n-rs-nOx"/>
+                            <constraint firstItem="trD-oE-RSW" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="18" id="APo-cM-uQI"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="4jb-tI-NZ9" secondAttribute="bottom" constant="40" id="L5P-Q2-ruA"/>
                             <constraint firstItem="wys-qa-341" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="20" id="Xfk-ru-IA3"/>
+                            <constraint firstItem="4jb-tI-NZ9" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="20" id="ccJ-hZ-Juh"/>
                             <constraint firstAttribute="trailing" secondItem="cvI-EP-3C8" secondAttribute="trailing" constant="20" id="dsR-QH-auU"/>
+                            <constraint firstItem="4jb-tI-NZ9" firstAttribute="top" secondItem="trD-oE-RSW" secondAttribute="bottom" constant="40" id="eCh-4f-gmR"/>
                             <constraint firstItem="wys-qa-341" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="60" id="eb4-Uz-HWB"/>
                             <constraint firstItem="cvI-EP-3C8" firstAttribute="centerY" secondItem="wys-qa-341" secondAttribute="centerY" id="htz-Bw-dNg"/>
-                            <constraint firstItem="hqo-U6-Vjk" firstAttribute="top" secondItem="wys-qa-341" secondAttribute="bottom" constant="40" id="iKg-fI-0d0"/>
-                            <constraint firstItem="LEt-fs-33y" firstAttribute="top" secondItem="hqo-U6-Vjk" secondAttribute="bottom" constant="40" id="snD-7d-0s6"/>
+                            <constraint firstItem="LEt-fs-33y" firstAttribute="top" secondItem="cvI-EP-3C8" secondAttribute="bottom" constant="40" id="pc2-oO-xWf"/>
                             <constraint firstItem="LEt-fs-33y" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="u4s-cI-JmC"/>
                         </constraints>
                     </view>
@@ -150,6 +146,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="enableTutorialSwitch" destination="cvI-EP-3C8" id="PoQ-0h-QrY"/>
+                        <outlet property="tableView" destination="4jb-tI-NZ9" id="KrK-pZ-d5b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
