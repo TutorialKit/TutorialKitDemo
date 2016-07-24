@@ -16,7 +16,6 @@ class HomeViewController: UIViewController {
     @IBAction func buttonPressed(sender: AnyObject) {
         iWinButton.enabled = true
         print("Button pressed")
-        
         TKTutorialView.setKey("Enable I win")
     }
     
@@ -31,14 +30,17 @@ class HomeViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func viewWillAppear(animated: Bool)
     {
         super.viewWillAppear(animated)
         
+//        let theme = TKTutorialTheme.defaultTheme()
+//        theme.foregroundColor = UIColor.yellowColor()
+//        theme.backgroundColor = UIColor.blackColor()
+//        _ = TKBannerTutorialView(forViewController:self, orientation:kTKBannerOrientationBottom, text:"Press Button!", theme:theme, key:"Enable I win")
         _ = TKBannerTutorialView(forViewController:self, orientation:kTKBannerOrientationBottom, text:"Press Button!", theme:TKTutorialTheme.defaultTheme(), key:"Enable I win")
-
     }
 }
+

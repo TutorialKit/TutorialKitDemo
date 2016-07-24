@@ -27,10 +27,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     var tutorialTheme = "49ers"
     
-    @IBAction func tutorialThemeButtonPressed(sender: AnyObject) {
-        print("Tutorial Theme area button pressed")
-    }
-    
     @IBAction func enableTutorialToggled(sender: AnyObject) {
         print("Enable Tutorial switch toggled to \(enableTutorialSwitch.on)")
     }
@@ -66,12 +62,19 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         print("You selected cell #\(indexPath.row)!")
         if let cell = tableView.cellForRowAtIndexPath(indexPath) {
             if cell.accessoryType != .Checkmark {
+                
                 // deselect other selected theme
                 let indexPathDeselect = NSIndexPath(forRow: themeNames.indexOf(tutorialTheme)!, inSection: 0)
                 let cell2deselect = tableView.cellForRowAtIndexPath(indexPathDeselect)
                 cell2deselect!.accessoryType = .None
+
+                // select new theme
                 cell.accessoryType = .Checkmark
                 tutorialTheme = (cell.textLabel?.text)!
+                //        let theme = TKTutorialTheme.defaultTheme()
+                //        theme.foregroundColor = UIColor.yellowColor()
+                //        theme.backgroundColor = UIColor.blackColor()
+                //        _ = TKBannerTutorialView(forViewController:self, orientation:kTKBannerOrientationBottom, text:"Press Button!", theme:theme, key:"Enable I win")
             }
         }
     }

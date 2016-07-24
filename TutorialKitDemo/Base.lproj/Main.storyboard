@@ -68,7 +68,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="438" y="-314"/>
+        </scene>
+        <!--Tap-->
+        <scene sceneID="nNO-SV-jsS">
+            <objects>
+                <viewController id="9TD-hh-0mL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MAX-3C-zm4"/>
+                        <viewControllerLayoutGuide type="bottom" id="dEJ-X2-gZS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UHm-fR-sb0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tap" image="StarTabIcon" id="kGg-gu-f8J"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nf8-jP-4GE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="-314"/>
+        </scene>
+        <!--Swipe-->
+        <scene sceneID="faI-mB-Sz8">
+            <objects>
+                <viewController id="IHJ-3e-vKW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C4B-vX-6OW"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Tr-yS-X6O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PXa-U7-1hf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Swipe" image="SwipeTabIcon" id="S9M-ey-Xb1"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ToV-vF-WX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="643"/>
         </scene>
         <!--Settings-->
         <scene sceneID="wg7-f3-ORb">
@@ -151,13 +193,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="353"/>
+            <point key="canvasLocation" x="438" y="329"/>
+        </scene>
+        <!--Ballon-->
+        <scene sceneID="Vuk-b2-JMV">
+            <objects>
+                <viewController id="dEr-4K-xSZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Toc-Ql-yvG"/>
+                        <viewControllerLayoutGuide type="bottom" id="4CD-GZ-5cS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nHz-go-Jrs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ballon" image="BalloonTabIcon" id="dll-Dd-76C"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LRc-fH-SCX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="329"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -165,6 +229,9 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="9TD-hh-0mL" kind="relationship" relationship="viewControllers" id="1y7-rm-oJq"/>
+                        <segue destination="IHJ-3e-vKW" kind="relationship" relationship="viewControllers" id="MtC-7J-I5I"/>
+                        <segue destination="dEr-4K-xSZ" kind="relationship" relationship="viewControllers" id="r1M-MM-MTD"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
@@ -172,9 +239,29 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Bsq-Aa-cTT">
+            <objects>
+                <viewController id="MOc-21-SI7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Wr-PT-dp9"/>
+                        <viewControllerLayoutGuide type="bottom" id="R2I-L4-x9a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RK3-df-URe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gOG-qe-KJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
+        <image name="BalloonTabIcon" width="30" height="30"/>
         <image name="HomeTabIcon" width="30" height="30"/>
         <image name="SettingsTabIcon" width="30" height="30"/>
+        <image name="StarTabIcon" width="30" height="30"/>
+        <image name="SwipeTabIcon" width="30" height="30"/>
     </resources>
 </document>
