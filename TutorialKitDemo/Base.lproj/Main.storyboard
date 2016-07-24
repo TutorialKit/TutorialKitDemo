@@ -83,11 +83,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGp-l8-FNM">
-                                <rect key="frame" x="20" y="50" width="60" height="60"/>
+                                <rect key="frame" x="20" y="50" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="awX-GF-Dfn"/>
-                                    <constraint firstAttribute="height" constant="60" id="nmO-ML-ayG"/>
+                                    <constraint firstAttribute="width" constant="80" id="awX-GF-Dfn"/>
+                                    <constraint firstAttribute="height" constant="80" id="nmO-ML-ayG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="B1"/>
@@ -96,11 +96,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vqa-Br-nbV">
-                                <rect key="frame" x="20" y="230" width="60" height="60"/>
+                                <rect key="frame" x="20" y="270" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Tvw-Bc-h06"/>
-                                    <constraint firstAttribute="width" constant="60" id="z5L-NV-WWM"/>
+                                    <constraint firstAttribute="height" constant="80" id="Tvw-Bc-h06"/>
+                                    <constraint firstAttribute="width" constant="80" id="z5L-NV-WWM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="B3"/>
@@ -109,11 +109,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGz-LJ-mco">
-                                <rect key="frame" x="20" y="140" width="60" height="60"/>
+                                <rect key="frame" x="20" y="160" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="E5z-eb-NAH"/>
-                                    <constraint firstAttribute="width" constant="60" id="sfR-YN-kQk"/>
+                                    <constraint firstAttribute="height" constant="80" id="E5z-eb-NAH"/>
+                                    <constraint firstAttribute="width" constant="80" id="sfR-YN-kQk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="B2"/>
