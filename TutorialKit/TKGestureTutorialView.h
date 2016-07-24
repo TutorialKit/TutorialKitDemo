@@ -9,7 +9,7 @@
 #import "TKTutorialView.h"
 
 
-#define GESTURE_DOT_SIZE        (60)
+#define GESTURE_DOT_SIZE        (50)
 
 
 @interface TKGestureTutorialView : TKTutorialView
