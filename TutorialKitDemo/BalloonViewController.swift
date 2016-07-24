@@ -10,7 +10,11 @@ import Foundation
 
 class BalloonViewController: UIViewController {
     
-    @IBOutlet weak var swiperLabel: UILabel!
+    @IBAction func leftButtonPressed(sender: AnyObject) {
+    }
+    
+    @IBAction func rightButtonPressed(sender: AnyObject) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

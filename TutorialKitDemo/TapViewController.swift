@@ -10,7 +10,14 @@ import Foundation
 
 class TapViewController: UIViewController {
     
-    @IBOutlet weak var swiperLabel: UILabel!
+    @IBAction func b1Tapped(sender: AnyObject) {
+    }
+    
+    @IBAction func b2Tapped(sender: AnyObject) {
+    }
+    
+    @IBAction func b3Tapped(sender: AnyObject) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

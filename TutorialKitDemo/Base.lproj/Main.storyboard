@@ -90,7 +90,10 @@
                                     <constraint firstAttribute="height" constant="60" id="nmO-ML-ayG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="B1"/>
+                                <connections>
+                                    <action selector="b1Tapped:" destination="9TD-hh-0mL" eventType="touchUpInside" id="atB-ls-Ghn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGz-LJ-mco">
                                 <rect key="frame" x="20" y="140" width="60" height="60"/>
@@ -100,7 +103,10 @@
                                     <constraint firstAttribute="width" constant="60" id="sfR-YN-kQk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="B2"/>
+                                <connections>
+                                    <action selector="b2Tapped:" destination="9TD-hh-0mL" eventType="touchUpInside" id="vW7-zW-SXV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vqa-Br-nbV">
                                 <rect key="frame" x="20" y="230" width="60" height="60"/>
@@ -110,7 +116,10 @@
                                     <constraint firstAttribute="width" constant="60" id="z5L-NV-WWM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="B3"/>
+                                <connections>
+                                    <action selector="b3Tapped:" destination="9TD-hh-0mL" eventType="touchUpInside" id="VDY-Tq-Ust"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -126,6 +135,9 @@
                     <tabBarItem key="tabBarItem" title="Tap" image="StarTabIcon" id="kGg-gu-f8J"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="b2Tapped" destination="AGz-LJ-mco" id="4eY-2Q-BdG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nf8-jP-4GE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -271,6 +283,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="⇧"/>
+                                <connections>
+                                    <action selector="rightButtonPressed:" destination="dEr-4K-xSZ" eventType="touchUpInside" id="u7N-Ry-MZB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR8-ic-li6">
                                 <rect key="frame" x="20" y="40" width="30" height="30"/>
@@ -283,6 +298,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="⌖"/>
+                                <connections>
+                                    <action selector="leftButtonPressed:" destination="dEr-4K-xSZ" eventType="touchUpInside" id="7G5-Ak-EnN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
