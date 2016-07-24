@@ -24,6 +24,7 @@
 		942E5FB21D4487780069C881 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E5FB11D4487780069C881 /* SwipeViewController.swift */; };
 		942E5FB41D448FBD0069C881 /* BalloonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E5FB31D448FBD0069C881 /* BalloonViewController.swift */; };
 		942E5FB61D448FD10069C881 /* TapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E5FB51D448FD10069C881 /* TapViewController.swift */; };
+		947148A41D45452C000B5545 /* TutorialThemeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947148A31D45452C000B5545 /* TutorialThemeSettings.swift */; };
 		94FBF7B01D432A4D00D12213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FBF7AD1D432A4D00D12213 /* AppDelegate.swift */; };
 		94FBF7B41D4334D000D12213 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FBF7B31D4334D000D12213 /* HomeViewController.swift */; };
 		94FBF7B61D4336B900D12213 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FBF7B51D4336B900D12213 /* SettingsViewController.swift */; };
@@ -58,6 +59,7 @@
 		942E5FB11D4487780069C881 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		942E5FB31D448FBD0069C881 /* BalloonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonViewController.swift; sourceTree = "<group>"; };
 		942E5FB51D448FD10069C881 /* TapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapViewController.swift; sourceTree = "<group>"; };
+		947148A31D45452C000B5545 /* TutorialThemeSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialThemeSettings.swift; sourceTree = "<group>"; };
 		94FBF7AD1D432A4D00D12213 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94FBF7B31D4334D000D12213 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		94FBF7B51D4336B900D12213 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				942E5FB11D4487780069C881 /* SwipeViewController.swift */,
 				942E5FB31D448FBD0069C881 /* BalloonViewController.swift */,
 				94FBF7B51D4336B900D12213 /* SettingsViewController.swift */,
+				947148A31D45452C000B5545 /* TutorialThemeSettings.swift */,
 				22E267591D427B83000DD04F /* Main.storyboard */,
 				22E2675C1D427B83000DD04F /* Assets.xcassets */,
 				22E2675E1D427B83000DD04F /* LaunchScreen.storyboard */,
@@ -231,6 +234,7 @@
 			files = (
 				22E267581D427B83000DD04F /* (null) in Sources */,
 				222489741D432BFC00594453 /* TKBubbleTutorialView.m in Sources */,
+				947148A41D45452C000B5545 /* TutorialThemeSettings.swift in Sources */,
 				2284319B1D4437C900E7172A /* TKTapGestureTutorialView.m in Sources */,
 				2284319F1D443B7500E7172A /* TKGestureTutorialView.m in Sources */,
 				22E267521D427B83000DD04F /* (null) in Sources */,

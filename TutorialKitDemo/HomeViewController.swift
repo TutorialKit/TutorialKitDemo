@@ -15,12 +15,10 @@ class HomeViewController: UIViewController {
     
     @IBAction func buttonPressed(sender: AnyObject) {
         iWinButton.enabled = true
-        print("Button pressed")
         TKTutorialView.setKey("Enable I win")
     }
     
     @IBAction func iWinButtonPressed(sender: AnyObject) {
-        print("I Win button pressed")
     }
     
     override func viewDidLoad() {
@@ -40,6 +38,10 @@ class HomeViewController: UIViewController {
         
         let theme = TKBannerTutorialView.defaultTheme()
         // get theme colors from demo app (setting)
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let themeSettings = appDelegate.themeSettings
+        theme.foregroundColor = themeSettings.themeForegroundColor
+        theme.backgroundColor = themeSettings.themeBackgroundColor
         _ = TKBannerTutorialView(forViewController:self, orientation:kTKBannerOrientationBottom, text:"Press Button!", theme:theme, key:"Enable I win")
     }
 }

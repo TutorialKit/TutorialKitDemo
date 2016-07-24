@@ -59,7 +59,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("You selected cell #\(indexPath.row)!")
         if let cell = tableView.cellForRowAtIndexPath(indexPath) {
             if cell.accessoryType != .Checkmark {
                 
@@ -71,10 +70,12 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
                 // select new theme for home screen
                 cell.accessoryType = .Checkmark
                 tutorialTheme = (cell.textLabel?.text)!
-                let theme = TKBannerTutorialView.defaultTheme()
-                theme.foregroundColor = UIColor.yellowColor()
-                theme.backgroundColor = UIColor.blackColor()
-                _ = TKBannerTutorialView(forViewController:self, orientation:kTKBannerOrientationBottom, text:"Press Button!", theme:theme, key:"Enable I win")
+                
+                // set new theme preferences
+                let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                let themeSettings = appDelegate.themeSettings
+                themeSettings.themeForegroundColor = themeFontColors[tutorialTheme]!
+                themeSettings.themeBackgroundColor = themeBackgroundColors[tutorialTheme]!
             }
         }
     }
