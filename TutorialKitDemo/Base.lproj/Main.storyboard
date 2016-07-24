@@ -73,7 +73,7 @@
         <!--Tap-->
         <scene sceneID="nNO-SV-jsS">
             <objects>
-                <viewController id="9TD-hh-0mL" sceneMemberID="viewController">
+                <viewController id="9TD-hh-0mL" customClass="TapViewController" customModule="TutorialKitDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MAX-3C-zm4"/>
                         <viewControllerLayoutGuide type="bottom" id="dEJ-X2-gZS"/>
@@ -253,7 +253,7 @@
         <!--Ballon-->
         <scene sceneID="Vuk-b2-JMV">
             <objects>
-                <viewController id="dEr-4K-xSZ" sceneMemberID="viewController">
+                <viewController id="dEr-4K-xSZ" customClass="BalloonViewController" customModule="TutorialKitDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Toc-Ql-yvG"/>
                         <viewControllerLayoutGuide type="bottom" id="4CD-GZ-5cS"/>
@@ -261,7 +261,37 @@
                     <view key="view" contentMode="scaleToFill" id="nHz-go-Jrs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCS-7T-sJc">
+                                <rect key="frame" x="270" y="40" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oGz-AQ-xao"/>
+                                    <constraint firstAttribute="width" constant="30" id="q8T-fW-MRy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="⇧"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR8-ic-li6">
+                                <rect key="frame" x="20" y="40" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="MmI-rF-hpt"/>
+                                    <constraint firstAttribute="width" constant="30" id="aiv-Sv-uQ3"/>
+                                    <constraint firstAttribute="height" constant="30" id="aks-Mz-PKL"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="pcP-TW-tgf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="⌖"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sCS-7T-sJc" secondAttribute="trailing" constant="20" id="9ve-hc-JLb"/>
+                            <constraint firstItem="sCS-7T-sJc" firstAttribute="top" secondItem="Toc-Ql-yvG" secondAttribute="bottom" constant="20" id="IVJ-So-FCS"/>
+                            <constraint firstItem="GR8-ic-li6" firstAttribute="top" secondItem="Toc-Ql-yvG" secondAttribute="bottom" constant="20" id="MwU-zu-a0F"/>
+                            <constraint firstItem="GR8-ic-li6" firstAttribute="leading" secondItem="nHz-go-Jrs" secondAttribute="leading" constant="20" id="Rh3-dI-bvO"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Ballon" image="BalloonTabIcon" id="dll-Dd-76C"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
