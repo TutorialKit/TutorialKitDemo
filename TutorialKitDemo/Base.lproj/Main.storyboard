@@ -342,23 +342,6 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Bsq-Aa-cTT">
-            <objects>
-                <viewController id="MOc-21-SI7" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8Wr-PT-dp9"/>
-                        <viewControllerLayoutGuide type="bottom" id="R2I-L4-x9a"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RK3-df-URe">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gOG-qe-KJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
     <resources>
         <image name="BalloonTabIcon" width="30" height="30"/>

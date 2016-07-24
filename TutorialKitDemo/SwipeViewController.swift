@@ -14,7 +14,7 @@ class SwipeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let swipeRight = UISwipeGestureRecognizer(target: self, action: "respond:")
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(SwipeViewController.respond(_:)))
         swipeRight.direction = .Right
         view.addGestureRecognizer(swipeRight)
     }
