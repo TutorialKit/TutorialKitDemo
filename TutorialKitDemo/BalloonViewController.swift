@@ -30,7 +30,7 @@ class BalloonViewController: UIViewController {
     {
         super.viewWillAppear(animated)
         
-        _ = TKBubbleTutorialView(forViewController:self, view:self.leftButton, orientation:kTKBubbleOrientationBelow, text:"This buttton does blah blah blah!", theme:TKBubbleTutorialView.defaultTheme(), key:"Bubble button left")
+        _ = TKBubbleTutorialView(forViewController:self, view:self.leftButton, orientation:kTKBubbleOrientationBelow, text:"This button does something, probably very important! More text goes here...", theme:TKBubbleTutorialView.defaultTheme(), key:"Bubble button left")
 
     }
 }

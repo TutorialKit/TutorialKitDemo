@@ -18,6 +18,7 @@
     labelRect.size.height = [self measureTextForWidth:labelRect.size.width];
     
     self.textLabel = [[UILabel alloc] initWithFrame:labelRect];
+    self.textLabel.numberOfLines = 0;
     self.textLabel.font = self.theme.font;
     self.textLabel.textColor = self.theme.foregroundColor;
     self.textLabel.text = self.text;
