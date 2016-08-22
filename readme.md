@@ -2,7 +2,6 @@ TutorialKit
 
 TutorialKit encompasses ready-made tutorial types that iOS developers can use to add in-line help to their app. The tutorial types include sliding banners, information bubbles, and pulsing circles and are customizable to match the look-and-feel of an already-existing app.
 
-
 Copyright [2016] [Tim Kokesh, Lee Cooper]
 
 Licensed under the Apache License, Version 2.0 (the "License");
